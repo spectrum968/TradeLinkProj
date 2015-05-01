@@ -1,0 +1,12 @@
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkCommon\obj\Debug\TradeLink.Common.csprojResolveAssemblyReference.cache
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkCommon\obj\Debug\TradeLink.Common.ParamPrompt.resources
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkCommon\obj\Debug\TradeLink.Common.csproj.GenerateResource.Cache
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkCommon\bin\Debug\EarlyClose.csv
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkCommon\bin\Debug\TradeLinkCommon.dll
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkCommon\bin\Debug\TradeLinkCommon.pdb
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkCommon\bin\Debug\fastJSON.dll
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkCommon\bin\Debug\QuandlCS.dll
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkCommon\bin\Debug\TradeLinkAPI.dll
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkCommon\bin\Debug\TradeLinkAPI.pdb
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkCommon\obj\Debug\TradeLinkCommon.dll
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkCommon\obj\Debug\TradeLinkCommon.pdb

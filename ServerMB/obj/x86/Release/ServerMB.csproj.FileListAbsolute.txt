@@ -1,0 +1,5 @@
+C:\Users\James\Documents\VS2013\ProjectTradeLink\ServerMB\obj\x86\Release\ServerMB.csprojResolveAssemblyReference.cache
+C:\Users\James\Documents\VS2013\ProjectTradeLink\ServerMB\obj\x86\Release\ServerMB.csproj.ResolveComReference.cache
+C:\Users\James\Documents\VS2013\ProjectTradeLink\ServerMB\obj\x86\Release\ServerMB.Properties.Resources.resources
+C:\Users\James\Documents\VS2013\ProjectTradeLink\ServerMB\obj\x86\Release\ServerMB.ServerMBMain.resources
+C:\Users\James\Documents\VS2013\ProjectTradeLink\ServerMB\obj\x86\Release\ServerMB.csproj.GenerateResource.Cache

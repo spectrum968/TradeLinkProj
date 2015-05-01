@@ -1,0 +1,5 @@
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkAPI\bin\x86\Debug\TradeLinkAPI.dll
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkAPI\bin\x86\Debug\TradeLinkAPI.pdb
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkAPI\obj\x86\Debug\TradeLinkAPI.dll
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkAPI\obj\x86\Debug\TradeLinkAPI.pdb
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkAPI\obj\x86\Debug\TradeLink.API.csprojResolveAssemblyReference.cache

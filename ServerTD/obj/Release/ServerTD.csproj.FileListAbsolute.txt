@@ -1,0 +1,4 @@
+C:\Users\James\Documents\VS2013\ProjectTradeLink\ServerTD\obj\Release\ServerTD.csprojResolveAssemblyReference.cache
+C:\Users\James\Documents\VS2013\ProjectTradeLink\ServerTD\obj\Release\TDServer.Properties.Resources.resources
+C:\Users\James\Documents\VS2013\ProjectTradeLink\ServerTD\obj\Release\TDServer.TDServerMain.resources
+C:\Users\James\Documents\VS2013\ProjectTradeLink\ServerTD\obj\Release\ServerTD.csproj.GenerateResource.Cache

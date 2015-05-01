@@ -1,0 +1,413 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TradeLinkResearch</name>
+    </assembly>
+    <members>
+        <member name="T:TradeLink.Research.SymbolList">
+            <summary>
+            get a list of verified NASDAQ or NYSE symbols.
+            (not guaranteed to be current, static list is distributed with Research components)
+            </summary>
+        </member>
+        <member name="T:TradeLink.Research.Fetch">
+            <summary>
+            obtains lists of symbols from on internet URLs
+            </summary>
+        </member>
+        <member name="M:TradeLink.Research.Fetch.NYSEFromURL(System.String)">
+            <summary>
+            gets approximate nyse symbols from a url
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.Research.Fetch.NASDAQFromURL(System.String)">
+            <summary>
+            gets approximate NASDAQ symbols from a url
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.Research.Fetch.FromURL(System.String)">
+            <summary>
+            gets approximate nyse and nasdaq symbols from url 
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.Research.Fetch.LinkedNYSEFromURL(System.String)">
+            <summary>
+            gets any linked approximate nyse symbols from a url (approximate = unverified, any 1-3 all caps symbol)
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.Research.Fetch.LinkedNASDAQFromURL(System.String)">
+            <summary>
+            gets any linked approximate nasdaq symbols from a url (approximate = unverified, any 1-3 all caps symbol)
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.Research.Fetch.RemoveUnlisted(TradeLink.API.Basket)">
+            <summary>
+            remove unlisted symbols, leaving only verified symbols remaining.
+            tradelink has a list of verified nasdaq and nyse symbols, but it is not guaranteed to be all inclusive.
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TradeLink.Research.FetchBasket">
+            <summary>
+            a handy popup box that lets a user fetch symbols from URL, using the Fetch class.
+            </summary>
+        </member>
+        <member name="F:TradeLink.Research.FetchBasket.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TradeLink.Research.FetchBasket.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TradeLink.Research.FetchBasket.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:TradeLink.Research.FetchTarget">
+            <summary>
+            used to serialize and store parameters selected in a FetchBasket popup.
+            </summary>
+        </member>
+        <member name="M:TradeLink.Research.FetchTarget.Go">
+            <summary>
+            fetches the basket
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.Research.FetchTarget.Go(System.String)">
+            <summary>
+            unused.
+            </summary>
+            <param name="username"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.Research.FetchTarget.FetchURL">
+            <summary>
+            gets a basket from a url
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.Research.FetchTarget.FetchFILE">
+            <summary>
+            gets a basket from a file
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.Research.FetchTarget.Serialize">
+            <summary>
+            serialize these parameters for later use
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.Research.FetchTarget.Deserialize(System.String)">
+            <summary>
+            restore parameters from file or network location.
+            </summary>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TradeLink.Research.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:TradeLink.Research.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:TradeLink.Research.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:TradeLink.Research.Properties.Resources.nasdaq">
+             <summary>
+               Looks up a localized string similar to AAAB
+            AABC
+            AACB
+            AACE
+            AAII
+            AALA
+            AAME
+            AANB
+            AAON
+            AAON
+            AAPL
+            AATK
+            AAUK
+            ABAX
+            ABBK
+            ABCB
+            ABCO
+            ABCW
+            ABER
+            ABFI
+            ABFS
+            ABGX
+            ABIX
+            ABIZ
+            ABLE
+            ABMC
+            ABMD
+            ABRI
+            ABTL
+            ABWG
+            ACAI
+            ACAM
+            ACAP
+            ACAS
+            ACAT
+            ACBA
+            ACCL
+            ACDO
+            ACEC
+            COMM
+            ACET
+            ACGL
+            ACHI
+            ACLA
+            ACLO
+            ACLS
+            ACME
+            ACME
+            ACMR
+            ACPW
+            ACRI
+            ACRN
+            ACRT
+            ACRU
+            ACTI
+            ACTL
+            ACTM
+            ACTN
+            ACTP
+            ACTR
+            ACTT
+            ACTU
+            ACXM
+            ADAM
+            ADAT
+            ADBE
+            ADBI
+            ADBL
+            ADCT
+            ADEX
+            ADGO
+            ADIC
+            ADLI
+            ADLR
+            ADLT
+            ADPI
+            ADPT
+            ADRX
+            ADSC
+            ADSK
+            ADST
+            ADSX
+            ADTK
+            ADTN
+            ADVP
+            AD [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:TradeLink.Research.Properties.Resources.nyse">
+             <summary>
+               Looks up a localized string similar to A|00846U101|Agilent Technologies, Inc. Common Stock|ELECTRONICS-SEMICONDUCTORS AND OTHER COMPONENTS|114A|
+            AA|013817101|Alcoa Inc. Common Stock|MINING,REFINING,FABRICATING-ALUMINUM|130A|
+            AAI|00949P108|AirTran Holdings, Inc. Common Stock|AIR-PASSENGER AIRLINES|202A|
+            AAP|00751Y106|Advance Auto Parts, Inc. Common Stock|RETAIL TRADE-OTHER RETAIL OPERATIONS|146G|
+            AAR|001765866|AMR Corporation 7.875% Public Income NotES(PINES) due July 13, 2039|AIR-PASSENGER AIRLINES|202A|
+            AAV|00762L101|Advantage Energy Incom [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="T:TradeLink.Research.QuickQuote">
+            <summary>
+            obtain a realtime quote from yahoo.
+            (take caution not to overuse this.  yahoo will rate limit you.)
+            </summary>
+        </member>
+        <member name="F:TradeLink.Research.QuickQuote.baseurl">
+            <summary>
+            base url for service
+            </summary>
+        </member>
+        <member name="M:TradeLink.Research.QuickQuote.Fetch(System.String)">
+            <summary>
+            fetch a quick quote from the yahoo service. returns a quick quote object.
+            </summary>
+            <param name="sym"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TradeLink.Research.RandomSymbol">
+            <summary>
+            used for generating random symbol names in studies.
+            (eg if you want to randomly walk the security space)
+            Whenever 'seed' is specified, use a randomized value... eg
+            (int)DateTime.Now.Ticks or likewise
+            </summary>
+        </member>
+        <member name="M:TradeLink.Research.RandomSymbol.GetSymbol(System.Int32)">
+            <summary>
+            gets a single random symbol.
+            </summary>
+            <param name="seed"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.Research.RandomSymbol.GetSymbol(System.Int32,System.Int32)">
+            <summary>
+            gets a single random symbol with a specified maximum length
+            </summary>
+            <param name="seed"></param>
+            <param name="maxlength"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.Research.RandomSymbol.Alphacodes2string(System.Int32[])">
+            <summary>
+            convert a list of ASCII integers to corresponding string
+            </summary>
+            <param name="codes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.Research.RandomSymbol.BaseTenConvert(System.Int64,System.Int32)">
+            <summary>
+            convert from base ten to another number system
+            </summary>
+            <param name="num"></param>
+            <param name="destbase"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.Research.RandomSymbol.GetSymbols(System.Int32)">
+            <summary>
+            get a random list of symbols of a random length, given seed. (eg (int)DateTime.Now.Ticks
+            </summary>
+            <param name="seed"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.Research.RandomSymbol.GetSymbols(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            get a random list of symbols, given seed, maximum symbol length and desired number of symbols. (seed eg (int)DateTime.Now.Ticks
+            </summary>
+            <param name="seed"></param>
+            <param name="symlength"></param>
+            <param name="symbolcount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.Research.RandomSymbol.GetSymbols(System.Int32,System.Int32)">
+            <summary>
+            get random list of symbols of specified max length
+            </summary>
+            <param name="symlen"></param>
+            <param name="symcount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.Research.RandomSymbol.GetSymbols">
+            <summary>
+            get random symbol
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TradeLink.Research.RandomTicks">
+            <summary>
+            create an array of ticks that is a random walk from an initial set of ticks.
+            walk varies between +MaxMoveCents and -MaxMoveCents.
+            at present no quotes are generated, only trades.
+            </summary>
+        </member>
+        <member name="M:TradeLink.Research.RandomTicks.#ctor(System.Int32)">
+            <summary>
+            create random ticks for desired number of symbols
+            </summary>
+            <param name="symcount"></param>
+        </member>
+        <member name="M:TradeLink.Research.RandomTicks.RandomPrices(System.Int32)">
+            <summary>
+            gets desired number of random [initial] prices.
+            </summary>
+            <param name="pricecount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.Research.RandomTicks.RandomPrices(System.Int32,System.Int32)">
+            <summary>
+            provides a group of random prices
+            </summary>
+            <param name="pricecout"></param>
+            <param name="seed"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.Research.RandomTicks.#ctor(System.String[],System.Int32)">
+            <summary>
+            creates ticks from list of symbols and a seed value
+            </summary>
+            <param name="symbols"></param>
+            <param name="seed"></param>
+        </member>
+        <member name="M:TradeLink.Research.RandomTicks.#ctor(System.String[])">
+            <summary>
+            creates random ticks from a list of symbols, with randomized initial prices
+            </summary>
+            <param name="symbols"></param>
+        </member>
+        <member name="M:TradeLink.Research.RandomTicks.#ctor(System.String[],System.Decimal[],System.Int32)">
+            <summary>
+            creates random ticks for a list of symbols and starting prices.
+            prices should be in same order for symbol they represent.
+            </summary>
+            <param name="symbols">list of symbols</param>
+            <param name="startingprices">opening trade for each symbol</param>
+        </member>
+        <member name="M:TradeLink.Research.RandomTicks.Generate(System.Int32)">
+            <summary>
+            generate Ticks per symbol using a random walk from initial prices
+            </summary>
+            <param name="Ticks"></param>
+        </member>
+        <member name="M:TradeLink.Research.RandomTicks.GenerateSymbol(System.String,System.Int32)">
+            <summary>
+            generate random ticks for single symbol
+            </summary>
+            <param name="sym"></param>
+            <param name="Ticks"></param>
+            <returns></returns>
+        </member>
+        <member name="P:TradeLink.Research.RandomTicks.Symbols">
+            <summary>
+            obtain list of symbols
+            </summary>
+        </member>
+        <member name="P:TradeLink.Research.RandomTicks.Ticks">
+            <summary>
+            obtain randomized ticks.  each 1st dimension array corresponds to Symbol in same-position of this.Symbols[]
+            Ticks are listed sequentionally in the 2nd dimension.
+            </summary>
+        </member>
+        <member name="P:TradeLink.Research.RandomTicks.MaxMoveCents">
+            <summary>
+            random walk varies between +MaxMoveCents and -MaxMoveCents
+            </summary>
+        </member>
+        <member name="P:TradeLink.Research.RandomTicks.VolPerTrade">
+            <summary>
+            volume to use on each tick
+            </summary>
+        </member>
+    </members>
+</doc>

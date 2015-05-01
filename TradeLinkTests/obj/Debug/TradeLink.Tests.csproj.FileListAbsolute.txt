@@ -1,0 +1,3 @@
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkTests\obj\Debug\TradeLink.Tests.csprojResolveAssemblyReference.cache
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkTests\obj\Debug\TestTradeLink.Properties.Resources.resources
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkTests\obj\Debug\TradeLink.Tests.csproj.GenerateResource.Cache

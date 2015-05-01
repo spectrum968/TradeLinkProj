@@ -1,0 +1,5 @@
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkAPI\bin\Release\TradeLinkAPI.XML
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkAPI\bin\Release\TradeLinkAPI.dll
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkAPI\bin\Release\TradeLinkAPI.pdb
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkAPI\obj\Release\TradeLinkAPI.dll
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkAPI\obj\Release\TradeLinkAPI.pdb

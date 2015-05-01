@@ -1,0 +1,1620 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TradeLinkAPI</name>
+    </assembly>
+    <members>
+        <member name="T:TradeLink.API.BarInterval">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:TradeLink.API.BarInterval.CustomVol">
+            <summary>
+            custom volume bars
+            </summary>
+        </member>
+        <member name="F:TradeLink.API.BarInterval.CustomTicks">
+            <summary>
+            custom tick bars
+            </summary>
+        </member>
+        <member name="F:TradeLink.API.BarInterval.CustomTime">
+            <summary>
+            custom interval length
+            </summary>
+        </member>
+        <member name="F:TradeLink.API.BarInterval.Minute">
+            <summary>
+            One-minute intervals
+            </summary>
+        </member>
+        <member name="F:TradeLink.API.BarInterval.FiveMin">
+            <summary>
+            Five-minute interval
+            </summary>
+        </member>
+        <member name="F:TradeLink.API.BarInterval.FifteenMin">
+            <summary>
+            FifteenMinute intervals
+            </summary>
+        </member>
+        <member name="F:TradeLink.API.BarInterval.ThirtyMin">
+            <summary>
+            Hour-long intervals
+            </summary>
+        </member>
+        <member name="F:TradeLink.API.BarInterval.Hour">
+            <summary>
+            Hour-long intervals
+            </summary>
+        </member>
+        <member name="F:TradeLink.API.BarInterval.Day">
+            <summary>
+            Day-long intervals
+            </summary>
+        </member>
+        <member name="M:TradeLink.API.BarList.newTick(TradeLink.API.Tick)">
+            <summary>
+            add tick to the bar
+            </summary>
+            <param name="k"></param>
+        </member>
+        <member name="M:TradeLink.API.BarList.newPoint(System.String,System.Decimal,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            add point to bar (allows for negative values)
+            </summary>
+            <param name="p"></param>
+            <param name="time"></param>
+            <param name="date"></param>
+            <param name="size"></param>
+        </member>
+        <member name="M:TradeLink.API.BarList.SetDefaultInterval(TradeLink.API.BarInterval,System.Int32)">
+            <summary>
+            set default interval as a pair
+            </summary>
+            <param name="type"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.BarList.Has(System.Int32,TradeLink.API.BarInterval,System.Int32)">
+            <summary>
+            check for minimum amount of bars, if they are present returns true
+            </summary>
+            <param name="MinBars"></param>
+            <param name="interval"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.BarList.Has(System.Int32)">
+            <summary>
+            returns true if minimum # of bars present in interval
+            </summary>
+            <param name="MinBars"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.BarList.Reset">
+            <summary>
+            clears contents of a list, erases all data.
+            </summary>
+        </member>
+        <member name="M:TradeLink.API.BarList.Open">
+            <summary>
+            gets array of opening prices for all bars in list, ordered by their index.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.BarList.Close">
+            <summary>
+            gets array of closing prices for all bars in list, ordered by their index.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.BarList.High">
+            <summary>
+            gets array of high prices for all bars in list, ordered by their index.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.BarList.Low">
+            <summary>
+            gets array of low prices for all bars in list, ordered by their index.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.BarList.OpenDouble">
+            <summary>
+            gets array of opening prices for all bars in list, ordered by their index.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.BarList.CloseDouble">
+            <summary>
+            gets array of closing prices for all bars in list, ordered by their index.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.BarList.HighDouble">
+            <summary>
+            gets array of high prices for all bars in list, ordered by their index.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.BarList.LowDouble">
+            <summary>
+            gets array of low prices for all bars in list, ordered by their index.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.BarList.VolDouble">
+            <summary>
+            gets array of volumes for all bars in list, ordered by their index.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.BarList.Date">
+            <summary>
+            gets array of dates for all bars in list, ordered by their index.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.BarList.Time">
+            <summary>
+            gets array of times for all bars in list, ordered by their index.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.BarList.Vol">
+            <summary>
+            gets array of volumes for all bars in list, ordered by their index.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.BarList.IntervalCount(TradeLink.API.BarInterval,System.Int32)">
+            <summary>
+            gets count of bars for a specific interval
+            </summary>
+            <param name="interval"></param>
+            <returns></returns>
+        </member>
+        <member name="P:TradeLink.API.BarList.symbol">
+            <summary>
+            symbol bar represents
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.BarList.First">
+            <summary>
+            index of first bar
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.BarList.Last">
+            <summary>
+            index of last bar
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.BarList.Count">
+            <summary>
+            count of all bars
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.BarList.RecentBar">
+            <summary>
+            most recently occuring bar
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.BarList.Item(System.Int32)">
+            <summary>
+            get a bar from list using it's index.  
+            index = 0 is oldest bar.  index = Last is newest bar.
+            index = -1 is one bar back.  index = -5 is 5 bars back
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="P:TradeLink.API.BarList.Item(System.Int32,TradeLink.API.BarInterval,System.Int32)">
+            <summary>
+            get a bar from list using it's index and interval
+            index = 0 is oldest bar.  index = Last is newest bar.
+            index = -1 is one bar back.  index = -5 is 5 bars back
+            </summary>
+            <param name="index"></param>
+            <param name="interval"></param>
+            <returns></returns>
+        </member>
+        <member name="P:TradeLink.API.BarList.DefaultCustomInterval">
+            <summary>
+            default interval for bar when getting bar data (in interval units)
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.BarList.DefaultInterval">
+            <summary>
+            default interval for bar when getting bar data (in BarIntervals)
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.BarList.DefaultIntervalIndex">
+            <summary>
+            default interval pair's (type/size) index
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.BarList.isValid">
+            <summary>
+            true if bar has symbol and some data
+            </summary>
+        </member>
+        <member name="E:TradeLink.API.BarList.GotNewBar">
+            <summary>
+            called when new bar is created.
+            this happens after first tick in the new bar.
+            last full bar will have index -1
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.BarList.Intervals">
+            <summary>
+            gets a list of intervals available on the bar.
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.BarList.CustomIntervals">
+            <summary>
+            gets list of all standard and custom intervals available on the bar
+            </summary>
+        </member>
+        <member name="T:TradeLink.API.GenericTrackerI">
+            <summary>
+            generic interface that can be used with any type of tracker
+            </summary>
+        </member>
+        <member name="M:TradeLink.API.GenericTrackerI.Clear">
+            <summary>
+            clears all tracked values and labels
+            </summary>
+        </member>
+        <member name="M:TradeLink.API.GenericTrackerI.Display(System.String)">
+            <summary>
+            display value of a tracked value for a given label
+            </summary>
+            <param name="txt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.GenericTrackerI.Display(System.Int32)">
+            <summary>
+            display tracked value for a given index
+            </summary>
+            <param name="idx"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.GenericTrackerI.getlabel(System.Int32)">
+            <summary>
+            get label associated with an index
+            </summary>
+            <param name="idx"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.GenericTrackerI.getindex(System.String)">
+            <summary>
+            get index associated with a given label
+            </summary>
+            <param name="txt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.GenericTrackerI.addindex(System.String)">
+            <summary>
+            gets index associated with a given label, adding index if it doesn't exist
+            (default value of index will be used)
+            </summary>
+            <param name="txt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.GenericTrackerI.Value(System.Int32)">
+            <summary>
+            gets value of given index
+            </summary>
+        </member>
+        <member name="M:TradeLink.API.GenericTrackerI.Value(System.String)">
+            <summary>
+            gets value of given label
+            </summary>
+            <param name="txt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.GenericTrackerI.ValueDecimal(System.Int32)">
+            <summary>
+            attempts to get decimal value of index
+            </summary>
+            <param name="idx"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.GenericTrackerI.ValueDecimal(System.String)">
+            <summary>
+            attempts to get decimal value of a label
+            </summary>
+            <param name="txt"></param>
+            <returns></returns>
+        </member>
+        <member name="P:TradeLink.API.GenericTrackerI.Name">
+            <summary>
+            name of tracker
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.GenericTrackerI.Count">
+            <summary>
+            get total number of labels/values
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.GenericTrackerI.TrackedType">
+            <summary>
+            gets type of tracked values
+            </summary>
+        </member>
+        <member name="E:TradeLink.API.GenericTrackerI.NewTxt">
+            <summary>
+            called when new text label is added
+            </summary>
+        </member>
+        <member name="M:TradeLink.API.GenericViewI.getselectedsymbols">
+            <summary>
+            get symbols from selected models
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.GenericViewI.getallsymbols">
+            <summary>
+            get symbols for all models
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.GenericViewI.Clear">
+            <summary>
+            clear all models from view
+            </summary>
+        </member>
+        <member name="M:TradeLink.API.GenericViewI.Hide">
+            <summary>
+            hide view
+            </summary>
+        </member>
+        <member name="M:TradeLink.API.GenericViewI.Show">
+            <summary>
+            show view
+            </summary>
+        </member>
+        <member name="M:TradeLink.API.GenericViewI.Toggle">
+            <summary>
+            toggle view between hidden/shown
+            </summary>
+        </member>
+        <member name="M:TradeLink.API.GenericViewI.Reset">
+            <summary>
+            reset the grid
+            </summary>
+        </member>
+        <member name="M:TradeLink.API.GenericViewI.refreshnow">
+            <summary>
+            refresh grid now
+            </summary>
+        </member>
+        <member name="M:TradeLink.API.GenericViewI.CreateRightClick">
+            <summary>
+            recreate right click menu
+            </summary>
+        </member>
+        <member name="M:TradeLink.API.GenericViewI.addsymbols(System.String[])">
+            <summary>
+            add models for symbols
+            </summary>
+            <param name="symbols"></param>
+        </member>
+        <member name="P:TradeLink.API.GenericViewI.ViewName">
+            <summary>
+            name of view
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.GenericViewI.Sleep">
+            <summary>
+            how much to sleep between model additions
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.GenericViewI.ColFreeze">
+            <summary>
+            number of view columsn frozen
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.GenericViewI.id">
+            <summary>
+            id of view
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.GenericViewI.TryCache">
+            <summary>
+            whether cache should be used
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.GenericViewI.Owner">
+            <summary>
+            who owns this view
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.GenericViewI.isOwnerValid">
+            <summary>
+            whether owner is defined
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.GenericViewI.Count">
+            <summary>
+            number of models in view
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.GenericViewI.VerboseDebugging">
+            <summary>
+            whether view uses extra debugging
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.GenericViewI.isColoringEnabled">
+            <summary>
+            whether view colors negative numbers and percents (slower)
+            </summary>
+        </member>
+        <member name="E:TradeLink.API.GenericViewI.GetPositionsEvent">
+            <summary>
+            get current positions
+            </summary>
+        </member>
+        <member name="E:TradeLink.API.GenericViewI.SendOrderEvent">
+            <summary>
+            allows sending of orders from views
+            </summary>
+        </member>
+        <member name="E:TradeLink.API.GenericViewI.SendDebugEvent">
+            <summary>
+            listen to view debug info
+            </summary>
+        </member>
+        <member name="E:TradeLink.API.GenericViewI.SendStatusEvent">
+            <summary>
+            listen to status updates
+            </summary>
+        </member>
+        <member name="E:TradeLink.API.GenericViewI.SendPostCreationEvent">
+            <summary>
+            be notified after models are created/added
+            </summary>
+        </member>
+        <member name="E:TradeLink.API.GenericViewI.SendDebugVisibleToggleEvent">
+            <summary>
+            request debug window be hidden/shown
+            </summary>
+        </member>
+        <member name="E:TradeLink.API.GenericViewI.SendNextViewRequestEvent">
+            <summary>
+            request another (next) view
+            </summary>
+        </member>
+        <member name="E:TradeLink.API.GenericViewI.SendPreviousViewRequestEvent">
+            <summary>
+            request another (prev) view
+            </summary>
+        </member>
+        <member name="E:TradeLink.API.GenericViewI.SendViewRequestEvent">
+            <summary>
+            request another specific view
+            </summary>
+        </member>
+        <member name="E:TradeLink.API.GenericViewI.GetAvailViewsEvent">
+            <summary>
+            request all views available
+            </summary>
+        </member>
+        <member name="T:TradeLink.API.HistSim">
+            <summary>
+            historical simulation
+            </summary>
+        </member>
+        <member name="M:TradeLink.API.HistSim.Reset">
+            <summary>
+            reset simulation
+            </summary>
+        </member>
+        <member name="M:TradeLink.API.HistSim.PlayTo(System.Int64)">
+            <summary>
+            start simulation and run to specified date/time
+            </summary>
+            <param name="ftime"></param>
+        </member>
+        <member name="M:TradeLink.API.HistSim.Stop">
+            <summary>
+            stop simulation
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.HistSim.TicksPresent">
+            <summary>
+            Total ticks available for processing, based on provided filter or tick files.
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.HistSim.TicksProcessed">
+            <summary>
+            Ticks processed in this simulation run.
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.HistSim.NextTickTime">
+            <summary>
+            Gets next tick in the simulation
+            </summary>
+        </member>
+        <member name="F:TradeLink.API.Const.IPREC">
+            <summary>
+            integer precision
+            </summary>
+        </member>
+        <member name="F:TradeLink.API.Const.IPRECV">
+            <summary>
+            inverse integer precision
+            </summary>
+        </member>
+        <member name="M:TradeLink.API.Basket.Add(System.String)">
+            <summary>
+            add symbol to basket
+            </summary>
+            <param name="symbol"></param>
+        </member>
+        <member name="M:TradeLink.API.Basket.Add(System.String[])">
+            <summary>
+            add symbols to basket
+            </summary>
+            <param name="symbols"></param>
+        </member>
+        <member name="M:TradeLink.API.Basket.Add(TradeLink.API.Security)">
+            <summary>
+            add security to basket
+            </summary>
+            <param name="newsecurity"></param>
+        </member>
+        <member name="M:TradeLink.API.Basket.Add(TradeLink.API.Basket)">
+            <summary>
+            add existing basket to this one
+            </summary>
+            <param name="newbasket"></param>
+        </member>
+        <member name="M:TradeLink.API.Basket.Remove(TradeLink.API.Basket)">
+            <summary>
+            remove any contents of another basket from this one
+            </summary>
+            <param name="subtractbasket"></param>
+        </member>
+        <member name="M:TradeLink.API.Basket.Remove(System.Int32)">
+            <summary>
+            remove a specific security
+            </summary>
+            <param name="i"></param>
+        </member>
+        <member name="M:TradeLink.API.Basket.Remove(TradeLink.API.Security)">
+            <summary>
+            remove a specific security
+            </summary>
+            <param name="s"></param>
+        </member>
+        <member name="M:TradeLink.API.Basket.Remove(System.String)">
+            <summary>
+            remove a specific security by it's symbol
+            </summary>
+            <param name="symbol"></param>
+        </member>
+        <member name="M:TradeLink.API.Basket.Clear">
+            <summary>
+            clear basket
+            </summary>
+        </member>
+        <member name="M:TradeLink.API.Basket.ToArray">
+            <summary>
+            get securities
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.Basket.ToSymArray">
+            <summary>
+            get short symbols
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.Basket.ToSymArrayFull">
+            <summary>
+            get full symbols
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.Basket.isSecurityPresent(TradeLink.API.Security)">
+            <summary>
+            whether security is present
+            </summary>
+            <param name="sec"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.Basket.isSymbolPresent(System.String)">
+            <summary>
+            whether short form of security is present
+            </summary>
+            <param name="sym"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.Basket.isFullSymbolPresent(System.String)">
+            <summary>
+            whether long form of security is present
+            </summary>
+            <param name="sym"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.Basket.isAnySymbolPresent(System.String)">
+            <summary>
+            whether either long or short form of security is present
+            </summary>
+            <param name="sym"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.Basket.TryGetSecurityFullSymbol(System.String,TradeLink.API.Security@)">
+            <summary>
+            attempts to fetch security by long symbol
+            </summary>
+            <param name="sym"></param>
+            <param name="sec"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.Basket.TryGetSecurityShortSymbol(System.String,TradeLink.API.Security@)">
+            <summary>
+            attempts to fetch security by short symbol
+            </summary>
+            <param name="sym"></param>
+            <param name="sec"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.Basket.TryGetSecurityAnySymbol(System.String,TradeLink.API.Security@)">
+            <summary>
+            attempts to fetch security first by long, then by short symbol
+            </summary>
+            <param name="sym"></param>
+            <param name="sec"></param>
+            <returns></returns>
+        </member>
+        <member name="P:TradeLink.API.Basket.Name">
+            <summary>
+            name of basket (optional)
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Basket.Item(System.Int32)">
+            <summary>
+            fetch specific security in basket
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="P:TradeLink.API.Basket.Count">
+            <summary>
+            number of securities contained in basket
+            </summary>
+        </member>
+        <member name="T:TradeLink.API.BarRequestField">
+            <summary>
+            Order of fields in a BARREQUEST message
+            </summary>
+        </member>
+        <member name="T:TradeLink.API.OrderField">
+            <summary>
+            Ordering of fields in SENDORDER and ORDERNOTIFY messages
+            </summary>
+        </member>
+        <member name="T:TradeLink.API.PositionField">
+            <summary>
+            order of fields in position response message
+            </summary>
+        </member>
+        <member name="T:TradeLink.API.TradeField">
+            <summary>
+            Order of fields in a TRADENOTIFY message
+            </summary>
+        </member>
+        <member name="T:TradeLink.API.MessageTypes">
+            <summary>
+            TradeLink Message Types used in TradeLink protocol
+            http://tradelink.googlecode.com/wiki/TradeLinkProtocol
+            </summary>
+        </member>
+        <member name="T:TradeLink.API.Order">
+            <summary>
+            TradeLink Order
+            </summary>
+        </member>
+        <member name="M:TradeLink.API.Order.Fill(TradeLink.API.Order)">
+            <summary>
+            try to fill order against another order
+            </summary>
+            <param name="o"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.Order.Fill(TradeLink.API.Tick)">
+            <summary>
+            try to fill order against trade
+            </summary>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.Order.Fill(TradeLink.API.Tick,System.Boolean,System.Boolean)">
+            <summary>
+            try to fill order against trade or bid/ask
+            </summary>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.Order.Fill(TradeLink.API.Tick,System.Boolean)">
+            <summary>
+            try to fill order as OPG order
+            </summary>
+            <param name="t"></param>
+            <param name="fillOPG"></param>
+            <returns></returns>
+        </member>
+        <member name="P:TradeLink.API.Order.symbol">
+            <summary>
+            symbol of order
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Order.TIF">
+            <summary>
+            time in force
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Order.ValidInstruct">
+            <summary>
+            valid instruction
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Order.side">
+            <summary>
+            true if buy, otherwise sell
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Order.price">
+            <summary>
+            price of order. (0 for market)
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Order.stopp">
+            <summary>
+            stop price if applicable
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Order.trail">
+            <summary>
+            trail amount if applicable
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Order.comment">
+            <summary>
+            order comment
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Order.ex">
+            <summary>
+            destination for order
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Order.Exchange">
+            <summary>
+            destination for order
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Order.size">
+            <summary>
+            signed size of order (-100 = sell 100)
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Order.UnsignedSize">
+            <summary>
+            unsigned size of order
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Order.date">
+            <summary>
+            date in tradelink date format (2010/03/05 = 20100305)
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Order.time">
+            <summary>
+            time including seconds 1:35:07PM = 133507
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Order.isFilled">
+            <summary>
+            whether order has been filled
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Order.isLimit">
+            <summary>
+            limit order
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Order.isStop">
+            <summary>
+            stop order
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Order.isTrail">
+            <summary>
+            trail order
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Order.isMarket">
+            <summary>
+            market order
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Order.Security">
+            <summary>
+            security type represented by order
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Order.Currency">
+            <summary>
+            currency with which to place order
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Order.Sec">
+            <summary>
+            security/contract information for order
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Order.Account">
+            <summary>
+            account to place inventory if order is executed
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Order.LocalSymbol">
+            <summary>
+            more specific symbol name
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Order.id">
+            <summary>
+            order id
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Order.isValid">
+            <summary>
+            order is valid
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Order.VirtualOwner">
+            <summary>
+            owner/originator of this order
+            </summary>
+        </member>
+        <member name="T:TradeLink.API.Providers">
+            <summary>
+            data feed and broker providers known to tradelink
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Result.ResultsDateTime">
+            <summary>
+            date time in ticks
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Result.Symbols">
+            <summary>
+            symbols traded in result
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Result.GrossPL">
+            <summary>
+            gross pl of result
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Result.NetPL">
+            <summary>
+            net pl of result
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Result.BuyPL">
+            <summary>
+            long trade pl
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Result.SellPL">
+            <summary>
+            short trade pl
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Result.Winners">
+            <summary>
+            number of winning trades
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Result.BuyWins">
+            <summary>
+            number of long winners
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Result.SellWins">
+            <summary>
+            number of short winners
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Result.SellLosers">
+            <summary>
+            number of short losers
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Result.BuyLosers">
+            <summary>
+            number of buy losers
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Result.Losers">
+            <summary>
+            number of total losers
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Result.Flats">
+            <summary>
+            number of break even trades
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Result.AvgPerTrade">
+            <summary>
+            average gross pl per trade 
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Result.AvgWin">
+            <summary>
+            average gross per win trade
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Result.AvgLoser">
+            <summary>
+            average gross per losing trade
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Result.MoneyInUse">
+            <summary>
+            total/max money used to acheive result
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Result.MaxPL">
+            <summary>
+            highest gross pl to acheive final result
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Result.MinPL">
+            <summary>
+            lowest gross pl to acheive final result
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Result.ComPerShare">
+            <summary>
+            comissions
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Result.MaxWin">
+            <summary>
+            biggest winner gross
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Result.MaxLoss">
+            <summary>
+            biggest loser gross
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Result.MaxOpenWin">
+            <summary>
+            max unclosed winning gross
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Result.MaxOpenLoss">
+            <summary>
+            max unclosed losing gross
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Result.SharesTraded">
+            <summary>
+            shares/contracts traded during result
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Result.RoundTurns">
+            <summary>
+            round turns
+            </summary>
+        </member>
+        <member name="T:TradeLink.API.Security">
+            <summary>
+            security definition
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Security.symbol">
+            <summary>
+            symbol name
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Security.symbol_Spaces">
+            <summary>
+            symbol with underscores represented as spaces
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Security.FullName">
+            <summary>
+            entire representation of security
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Security.DestEx">
+            <summary>
+            exchange associated with security
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Security.Type">
+            <summary>
+            type associated with security
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Security.isValid">
+            <summary>
+            whether security is valid
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Security.hasDest">
+            <summary>
+            whether security has an exchange
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Security.hasType">
+            <summary>
+            whether security has an explicit type
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Security.Date">
+            <summary>
+            date associated with security (eg expiration date)
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Security.Details">
+            <summary>
+            details associated with security (eg put/call for options)
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Security.isCall">
+            <summary>
+            whether security is a call
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Security.isPut">
+            <summary>
+            whether security is put
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Security.Strike">
+            <summary>
+            strike price of options securities
+            </summary>
+        </member>
+        <member name="T:TradeLink.API.SecurityType">
+            <summary>
+            Stock, Option, Future, Currency Forward, Forward, FOP, Warrant, ForEx, Index, Bond
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Skin.Properties">
+            <summary>
+            xml encoded properties of response and their values
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Skin.ResponseName">
+            <summary>
+            fullname (namespace.classname) of response in question
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Skin.ResponseDLL">
+            <summary>
+            full path name to local dll containing classes.
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Skin.isValid">
+            <summary>
+            identifies where skin is valid
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Tick.symbol">
+            <summary>
+            symbol for tick
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Tick.time">
+            <summary>
+            tick time in 24 format (4:59pm => 1659)
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Tick.date">
+            <summary>
+            tick date
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Tick.datetime">
+            <summary>
+            date and time represented as long, eg 8:05pm on 4th of July:
+            200907042005.
+            this is not guaranteed to be set.
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Tick.size">
+            <summary>
+            size of last trade
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Tick.depth">
+            <summary>
+            depth of last bid/ask quote
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Tick.trade">
+            <summary>
+            trade price
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Tick.bid">
+            <summary>
+            bid price
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Tick.ask">
+            <summary>
+            offer price
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Tick.bs">
+            <summary>
+            normal bid size (size/100 for equities, /1 for others)
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Tick.os">
+            <summary>
+            normal ask size (size/100 for equities, /1 for others)
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Tick.BidSize">
+            <summary>
+            tick.bs*100 (only for equities)
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Tick.AskSize">
+            <summary>
+            tick.os*100 (only for equities)
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Tick.be">
+            <summary>
+            bid exchange
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Tick.oe">
+            <summary>
+            ask exchange
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Tick.ex">
+            <summary>
+            trade exchange
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Tick.symidx">
+            <summary>
+            index of symbol associated with this tick.
+            this is not guaranteed to be set
+            </summary>
+        </member>
+        <member name="T:TradeLink.API.OrderInstructionType">
+            <summary>
+            list of accepted special order instructions
+            </summary>
+        </member>
+        <member name="F:TradeLink.API.OrderInstructionType.DAY">
+            <summary>
+            day order
+            </summary>
+        </member>
+        <member name="F:TradeLink.API.OrderInstructionType.GTC">
+            <summary>
+            good till canceled
+            </summary>
+        </member>
+        <member name="F:TradeLink.API.OrderInstructionType.MOC">
+            <summary>
+            market on close
+            </summary>
+        </member>
+        <member name="F:TradeLink.API.OrderInstructionType.OPG">
+            <summary>
+            opening order
+            </summary>
+        </member>
+        <member name="F:TradeLink.API.OrderInstructionType.IOC">
+            <summary>
+            immediate or cancel
+            </summary>
+        </member>
+        <member name="F:TradeLink.API.OrderInstructionType.PEG2MID">
+            <summary>
+            pegged to mid-market
+            </summary>
+        </member>
+        <member name="F:TradeLink.API.OrderInstructionType.PEG2MKT">
+            <summary>
+            pegged to market
+            </summary>
+        </member>
+        <member name="F:TradeLink.API.OrderInstructionType.PEG2PRI">
+            <summary>
+            pegged to primary
+            </summary>
+        </member>
+        <member name="F:TradeLink.API.OrderInstructionType.PEG2BST">
+            <summary>
+            pegged to best
+            </summary>
+        </member>
+        <member name="F:TradeLink.API.OrderInstructionType.HIDDEN">
+            <summary>
+            hidden
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Trade.id">
+            <summary>
+            id of trade
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Trade.symbol">
+            <summary>
+            symbol traded
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Trade.xsize">
+            <summary>
+            executed size
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Trade.xprice">
+            <summary>
+            executed price
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Trade.xtime">
+            <summary>
+            executed time
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Trade.xdate">
+            <summary>
+            executed date
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Trade.side">
+            <summary>
+            side of trade (true=long)
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Trade.Account">
+            <summary>
+            account trade occured in
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Trade.LocalSymbol">
+            <summary>
+            local symbol
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Trade.ex">
+            <summary>
+            exchange/destination where trade occured
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Trade.Security">
+            <summary>
+            security type
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Trade.Sec">
+            <summary>
+            full security information for trade
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Trade.Currency">
+            <summary>
+            currency trade occured in
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Trade.UnsignedSize">
+            <summary>
+            unsigned size of trade
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Trade.isValid">
+            <summary>
+            whether trade is valid
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Trade.isFilled">
+            <summary>
+            whether trade has been filled
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.Trade.comment">
+            <summary>
+            comment on trade
+            </summary>
+        </member>
+        <member name="T:TradeLink.API.TLClient">
+            <summary>
+            Generic interface for TradeLink Clients.  
+            </summary>
+        </member>
+        <member name="M:TradeLink.API.TLClient.SendOrderStatus(TradeLink.API.Order)">
+            <summary>
+            send order
+            </summary>
+            <param name="order"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.TLClient.CancelOrder(System.Int64)">
+            <summary>
+            cancel order
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:TradeLink.API.TLClient.Disconnect">
+            <summary>
+            disconnect from server (should call or may have problems with reconnects)
+            </summary>
+        </member>
+        <member name="M:TradeLink.API.TLClient.Register">
+            <summary>
+            connect to a server
+            </summary>
+        </member>
+        <member name="M:TradeLink.API.TLClient.Subscribe(TradeLink.API.Basket)">
+            <summary>
+            request ticks for symbols
+            </summary>
+            <param name="mb"></param>
+        </member>
+        <member name="M:TradeLink.API.TLClient.Unsubscribe">
+            <summary>
+            unrequest ticks
+            </summary>
+        </member>
+        <member name="M:TradeLink.API.TLClient.TLSend(TradeLink.API.MessageTypes,System.String)">
+            <summary>
+            send a message
+            </summary>
+            <param name="type"></param>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.TLClient.TLSend(TradeLink.API.MessageTypes,System.Int64,System.Int64,System.Int64,System.String,System.String@)">
+            <summary>
+            send a message
+            </summary>
+            <param name="type"></param>
+            <param name="source"></param>
+            <param name="dest"></param>
+            <param name="msgid"></param>
+            <param name="request"></param>
+            <param name="result"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.TLClient.RequestFeatures">
+            <summary>
+            request features supported by provider
+            </summary>
+        </member>
+        <member name="M:TradeLink.API.TLClient.Stop">
+            <summary>
+            stop client
+            </summary>
+        </member>
+        <member name="M:TradeLink.API.TLClient.Start">
+            <summary>
+            start client
+            </summary>
+        </member>
+        <member name="M:TradeLink.API.TLClient.Mode(System.Int32,System.Boolean)">
+            <summary>
+            connect to a provider (make it selected)
+            </summary>
+            <param name="ProviderIndex"></param>
+            <param name="showwarning"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.TLClient.Mode">
+            <summary>
+            reconnect to provider or re-search providers
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:TradeLink.API.TLClient.ServerVersion">
+            <summary>
+            get version of server
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.TLClient.BrokerName">
+            <summary>
+            get name of provider/server
+            </summary>
+        </member>
+        <member name="E:TradeLink.API.TLClient.gotTick">
+            <summary>
+            receive ticks
+            </summary>
+        </member>
+        <member name="E:TradeLink.API.TLClient.gotFill">
+            <summary>
+            receive trades
+            </summary>
+        </member>
+        <member name="E:TradeLink.API.TLClient.gotOrder">
+            <summary>
+            receive orders
+            </summary>
+        </member>
+        <member name="E:TradeLink.API.TLClient.gotAccounts">
+            <summary>
+            receive account information
+            </summary>
+        </member>
+        <member name="E:TradeLink.API.TLClient.gotOrderCancel">
+            <summary>
+            receive cancel acks
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.TLClient.ProvidersAvailable">
+            <summary>
+            get providers available
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.TLClient.ProviderSelected">
+            <summary>
+            get selected provider
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.TLClient.RequestFeatureList">
+            <summary>
+            get features for selected provider
+            </summary>
+        </member>
+        <member name="E:TradeLink.API.TLClient.gotFeatures">
+            <summary>
+            receive features
+            </summary>
+        </member>
+        <member name="E:TradeLink.API.TLClient.gotPosition">
+            <summary>
+            receive [initial] positions
+            </summary>
+        </member>
+        <member name="E:TradeLink.API.TLClient.gotImbalance">
+            <summary>
+            receive imbalances
+            </summary>
+        </member>
+        <member name="E:TradeLink.API.TLClient.gotUnknownMessage">
+            <summary>
+            receive messages from broker
+            </summary>
+        </member>
+        <member name="E:TradeLink.API.TLClient.SendDebugEvent">
+            <summary>
+            receive debug messages from client
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.TLClient.Name">
+            <summary>
+            get name of this client
+            </summary>
+        </member>
+        <member name="T:TradeLink.API.TLServerNotFound">
+            <summary>
+            Used to indicate that a TradeLink Server was not running.
+            </summary>
+        </member>
+        <member name="T:TradeLink.API.TLServer">
+            <summary>
+            For providing execution and data subscription services to tradelink clients.
+            </summary>
+        </member>
+        <member name="M:TradeLink.API.TLServer.newTick(TradeLink.API.Tick)">
+            <summary>
+            send subscribed clients new tick
+            </summary>
+            <param name="tick"></param>
+        </member>
+        <member name="M:TradeLink.API.TLServer.newFill(TradeLink.API.Trade)">
+            <summary>
+            send clients new fill
+            </summary>
+            <param name="trade"></param>
+        </member>
+        <member name="M:TradeLink.API.TLServer.newOrder(TradeLink.API.Order)">
+            <summary>
+            send clients new order
+            </summary>
+            <param name="o"></param>
+        </member>
+        <member name="M:TradeLink.API.TLServer.newCancel(System.Int64)">
+            <summary>
+            send clients new cancel ack
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:TradeLink.API.TLServer.Start">
+            <summary>
+            start server
+            </summary>
+        </member>
+        <member name="M:TradeLink.API.TLServer.Stop">
+            <summary>
+            stop server
+            </summary>
+        </member>
+        <member name="M:TradeLink.API.TLServer.TLSend(System.String,TradeLink.API.MessageTypes,System.String)">
+            <summary>
+            send message to a client
+            </summary>
+            <param name="msg"></param>
+            <param name="type"></param>
+            <param name="client"></param>
+        </member>
+        <member name="M:TradeLink.API.TLServer.TLSend(System.String,TradeLink.API.MessageTypes,System.Int32)">
+            <summary>
+            send message to a client
+            </summary>
+            <param name="msg"></param>
+            <param name="type"></param>
+            <param name="client"></param>
+        </member>
+        <member name="M:TradeLink.API.TLServer.ClientSymbols(System.String)">
+            <summary>
+            gets current list of symbols for a given client
+            </summary>
+            <param name="client"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.TLServer.ClientName(System.Int32)">
+            <summary>
+            gets a name of given client
+            </summary>
+            <param name="clientnum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.API.TLServer.newImbalance(TradeLink.API.Imbalance)">
+            <summary>
+            notify clients of a new imbalance
+            </summary>
+            <param name="imb"></param>
+        </member>
+        <member name="M:TradeLink.API.TLServer.SymbolSubscribed(System.String)">
+            <summary>
+            returns true if any client is subscribed to a given symbol
+            </summary>
+            <param name="sym"></param>
+            <returns></returns>
+        </member>
+        <member name="P:TradeLink.API.TLServer.newProviderName">
+            <summary>
+            provider name of the server
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.TLServer.VerboseDebugging">
+            <summary>
+            enable extended debugging
+            </summary>
+        </member>
+        <member name="P:TradeLink.API.TLServer.NumClients">
+            <summary>
+            number of client connected
+            </summary>
+        </member>
+        <member name="E:TradeLink.API.TLServer.SendDebugEvent">
+            <summary>
+            notify of debug events
+            </summary>
+        </member>
+    </members>
+</doc>

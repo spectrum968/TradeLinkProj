@@ -1,0 +1,6 @@
+C:\Users\James\Documents\VS2013\ProjectTradeLink\ServerTDX\obj\Debug\ServerTDX.csprojResolveAssemblyReference.cache
+C:\Users\James\Documents\VS2013\ProjectTradeLink\ServerTDX\obj\Debug\Interop.tdaactx.dll
+C:\Users\James\Documents\VS2013\ProjectTradeLink\ServerTDX\obj\Debug\ServerTDX.csproj.ResolveComReference.cache
+C:\Users\James\Documents\VS2013\ProjectTradeLink\ServerTDX\obj\Debug\TDServer.Properties.Resources.resources
+C:\Users\James\Documents\VS2013\ProjectTradeLink\ServerTDX\obj\Debug\TDServer.TDServerMain.resources
+C:\Users\James\Documents\VS2013\ProjectTradeLink\ServerTDX\obj\Debug\ServerTDX.csproj.GenerateResource.Cache

@@ -1,0 +1,15 @@
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkResearch\obj\Debug\TradeLink.Research.csprojResolveAssemblyReference.cache
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkResearch\obj\Debug\TradeLink.Research.FetchBasket.resources
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkResearch\obj\Debug\TradeLink.Research.Properties.Resources.resources
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkResearch\obj\Debug\TradeLink.Research.csproj.GenerateResource.Cache
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkResearch\bin\Debug\EarlyClose.csv
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkResearch\bin\Debug\TradeLinkResearch.dll
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkResearch\bin\Debug\TradeLinkResearch.pdb
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkResearch\bin\Debug\TradeLinkAPI.dll
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkResearch\bin\Debug\TradeLinkCommon.dll
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkResearch\bin\Debug\QuandlCS.dll
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkResearch\bin\Debug\fastJSON.dll
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkResearch\bin\Debug\TradeLinkAPI.pdb
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkResearch\bin\Debug\TradeLinkCommon.pdb
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkResearch\obj\Debug\TradeLinkResearch.dll
+C:\Users\James\Documents\VS2013\ProjectTradeLink\TradeLinkResearch\obj\Debug\TradeLinkResearch.pdb
